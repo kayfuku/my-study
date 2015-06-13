@@ -3,7 +3,6 @@
 //              and compares their efficiencies. 
 //  Author    : Fukutani, Kei
 //  Date      : February 10, 2015
-//  Labs      : Lab1 (CS111C)
 //  File Name : RecursionEfficiency.java 
 //**************************************************************
 
