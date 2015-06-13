@@ -3,15 +3,14 @@
 //              polynomial and how to use it. 
 //  Author    : Fukutani, Kei
 //  Date      : March 3, 2015
-//  Labs      : Lab2 (CS111C)
-//  File Name : Lab2.java 
+//  File Name : ADTpolynomial.java 
 //**************************************************************
 
 package cs111c;
 
 import java.util.Scanner;
 
-public class Lab2
+public class ADTpolynomial
 {
     public static void main(String[] args)
     // Allows the user to input, and then add, two polynomials.
