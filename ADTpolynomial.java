@@ -7,8 +7,6 @@
 //  File Name : Lab2.java 
 //**************************************************************
 
-package cs111c;
-
 import java.util.Scanner;
 
 public class Lab2
