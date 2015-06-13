@@ -1,0 +1,31 @@
+<!--
+  Author    : Fukutani, Kei
+  File Name : sysinfo.html
+  Date      : April 17, 2015
+  Objective : This HTML file makes a user interface for the JSP 
+              program, "Sysinfo.jsp".
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+    What do you want to know?
+    <form action="Sysinfo.jsp" method="post">
+	    <select name="system_property" size=6 >
+		    <option value="1" selected>Java version
+		    <option value="2" >Java directory
+		    <option value="3" >OS name
+		    <option value="4" >User name
+		    <option value="5" >User home
+		    <option value="6" >Current directory		
+	    </select>
+	    <input type="submit" value="Go">
+    </form>
+
+</body>
+</html>
