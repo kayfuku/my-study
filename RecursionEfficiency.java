@@ -6,8 +6,6 @@
 //  File Name : RecursionEfficiency.java 
 //**************************************************************
 
-package cs111c;
-
 public class RecursionEfficiency
 {
     private static int numOfMultiply = 0;
