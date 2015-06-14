@@ -1,0 +1,500 @@
+<!-- 
+  Author    : Kei Fukutani
+  File Name : activity_quiz_activity2.xml
+  Date      : 4/22/14
+  Objective : This file contains the whole layout of 
+              QuizActivity2. 
+ -->
+ 
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".QuizActivity2" >
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="30dp"
+        android:text="@string/text_name" 
+        />
+
+    <TextView
+        android:id="@+id/text_capitals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_states"
+        android:layout_alignBottom="@+id/text_states"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/text_name"
+        android:text="@string/text_capitals" 
+        />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_states"
+        android:layout_alignLeft="@+id/text_capitals"
+        android:text="@string/user_name" 
+        />
+
+    <TextView
+        android:id="@+id/text_q1"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_states"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:text="- - - - Quiz 1 - - - -" 
+        />
+    
+    <TextView
+        android:id="@+id/text_q2"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_states"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="30dp"
+        android:text="- - - - Quiz 2 - - - -" 
+        />
+    
+    <TextView
+        android:id="@+id/text_q3"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_states"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="50dp"
+        android:text="- - - - Quiz 3 - - - -" 
+        />
+    
+    <TextView
+        android:id="@+id/text_q4"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_states"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="70dp"
+        android:text="- - - - Quiz 4 - - - -" 
+        />
+    
+    <TextView
+        android:id="@+id/text_q5"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_states"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="90dp"
+        android:text="- - - - Quiz 5- - - -" 
+        />
+    
+    <TextView
+        android:id="@+id/text_capitals2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_name"
+        android:layout_below="@+id/text_states"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="120dp"
+        android:text="@string/text_capitals" 
+        />
+
+    <TextView
+        android:id="@+id/text_states2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/text_capitals2"
+        android:layout_alignBottom="@+id/text_capitals2"
+        android:layout_marginLeft="21dp"
+        android:layout_toRightOf="@+id/text_name"
+        android:text="@string/text_states" 
+        />
+    
+    <TextView
+        android:id="@+id/text_q6"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_capitals2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="10dp"
+        android:text="- - - - Quiz 6 - - - -" 
+        />
+    
+    <TextView
+        android:id="@+id/text_q7"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_capitals2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="30dp"
+        android:text="- - - - Quiz 7 - - - -" 
+        />
+    
+    <TextView
+        android:id="@+id/text_q8"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_capitals2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="50dp"
+        android:text="- - - - Quiz 8 - - - -" 
+        />
+    
+    <TextView
+        android:id="@+id/text_q9"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_capitals2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="70dp"
+        android:text="- - - - Quiz 9 - - - -" 
+        />
+    
+    <TextView
+        android:id="@+id/text_q10"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_capitals2"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="90dp"
+        android:text="- - - - Quiz 10- - - -" 
+        />
+
+    <TextView
+        android:id="@+id/text_states"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/text_capitals2"
+        android:layout_below="@+id/text_name"
+        android:layout_marginTop="16dp"
+        android:text="@string/text_states" 
+        />
+
+    <EditText
+        android:id="@+id/et_q1"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/text_capitals"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:textSize="14sp"
+        android:background="#99FF99"
+        android:inputType="text"
+        >
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/et_q2"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/text_capitals"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textSize="14sp"
+        android:background="#99FF99"
+        android:inputType="text"
+        >
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/et_q3"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/text_capitals"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:textSize="14sp"
+        android:background="#99FF99"
+        android:inputType="text"
+        >
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/et_q4"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/text_capitals"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:textSize="14sp"
+        android:background="#99FF99"
+        android:inputType="text"
+        >
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/et_q5"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/text_capitals"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:textSize="14sp"
+        android:background="#99FF99"
+        android:inputType="text"
+        >
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/et_q6"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/text_states2"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:textSize="14sp"
+        android:background="#99FF99"
+        android:inputType="text"
+        >
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/et_q7"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/text_states2"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textSize="14sp"
+        android:background="#99FF99"
+        android:inputType="text"
+        >
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/et_q8"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/text_states2"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:textSize="14sp"
+        android:background="#99FF99"
+        android:inputType="text"
+        >
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/et_q9"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/text_states2"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:textSize="14sp"
+        android:background="#99FF99"
+        android:inputType="text"
+        >
+        <requestFocus />
+    </EditText>
+    
+    <EditText
+        android:id="@+id/et_q10"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_below="@+id/text_states2"
+        android:layout_marginLeft="135dp"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:textSize="14sp"
+        android:background="#99FF99"
+        android:inputType="text"
+        >
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/text_points"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/btn_done"
+        android:layout_alignLeft="@+id/text_q10"
+        android:background="#FFFF99"
+        android:text="@string/text_points"
+        android:textSize="25sp" 
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/text_result1"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_q1"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/et_q1"
+        android:text=""
+        android:textSize="11sp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_result2"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_q2"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/et_q2"
+        android:text="" 
+        android:textSize="11sp"
+        />
+    
+    <TextView
+        android:id="@+id/text_result3"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_q3"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/et_q3"
+        android:text="" 
+        android:textSize="11sp"
+        />
+    
+    <TextView
+        android:id="@+id/text_result4"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_q4"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/et_q4"
+        android:text="" 
+        android:textSize="11sp"
+        />
+    
+    <TextView
+        android:id="@+id/text_result5"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_q5"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/et_q5"
+        android:text="" 
+        android:textSize="11sp"
+        />
+    
+    <TextView
+        android:id="@+id/text_result6"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_q6"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/et_q6"
+        android:text="" 
+        android:textSize="11sp"
+        />
+    
+    <TextView
+        android:id="@+id/text_result7"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_q7"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/et_q7"
+        android:text="" 
+        android:textSize="11sp"
+        />
+    
+    <TextView
+        android:id="@+id/text_result8"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_q8"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/et_q8"
+        android:text="" 
+        android:textSize="11sp"
+        />
+    
+    <TextView
+        android:id="@+id/text_result9"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_q9"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/et_q9"
+        android:text="" 
+        android:textSize="11sp"
+        />
+    
+    <TextView
+        android:id="@+id/text_result10"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/et_q10"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/et_q10"
+        android:text="" 
+        android:textSize="11sp"
+        />
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_q10"
+        android:layout_marginTop="22dp"
+        android:layout_toLeftOf="@+id/text_result10"
+        android:onClick="doit"
+        android:text="@string/btn_done" 
+        />
+
+    <Button
+        android:id="@+id/btn_score"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_toRightOf="@+id/btn_done"
+        android:text="Score" 
+        android:gravity="center"
+        android:onClick="doit"
+        />
+
+    <Button
+        android:id="@+id/btn_replay"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="70dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/btn_score"
+        android:layout_alignBottom="@+id/btn_score"
+        android:layout_alignRight="@+id/user_name"
+        android:gravity="center"
+        android:onClick="doit"
+        android:text="Replay" />
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<!-- 
+  Author    : Kei Fukutani
+  File Name : activity_main.xml
+  Date      : 4/22/14
+  Objective : This file contains the whole layout of 
+              MainActivity2. 
+ -->
+
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:text="@string/text_title" 
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:hint="@string/text_hint"
+        android:text=""
+        android:inputType="text"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btn_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/et"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:text="@string/btn_score"
+        android:onClick="doit"
+        />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="26dp"
+        android:text="@string/btn_play" 
+        android:onClick="doit"
+        />
+
+    <TextView
+        android:id="@+id/text_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="" 
+        />
+
+</RelativeLayout>

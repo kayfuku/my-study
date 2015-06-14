@@ -1,0 +1,20 @@
+<!-- 
+  Author    : Kei Fukutani
+  File Name : strings.xml
+  Date      : 5/17/14
+  Objective : This file contains the resource of strings. 
+ -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SendBirthdayWish</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="btn_happy">Happy Guy</string>
+    <string name="btn_next">Next</string>
+    <string name="rb_sms">SMS</string>
+    <string name="rb_email">Email</string>
+    <string name="btn_send">Send</string>
+
+</resources>

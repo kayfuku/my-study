@@ -1,0 +1,13 @@
+name,email,phone#,birthdate
+----------------------------
+ce9fe,kifinewera@gmail.com,4157863967,1978-12-01
+boi,boi@test.com,1234456742,1974-10-30
+bpo,bpo@test.com,6873345555,1992-04-07
+h0l,h0l@test.com,1335532222,1984-07-01
+quy,quy@test.com,8978348232,1979-05-25
+wo3,kifinewera@gmail.com,4157863967,1979-05-17
+boo,boo@test.com,5556,1979-05-17
+wee,wee@test.com,8978348232,1979-05-18
+ioio,kifinewera@gmail.com,4157863967,1979-05-18
+huu,huu@test.com,8978348232,1979-05-18
+huu,huu@test.com,8978348232,1979-05-22

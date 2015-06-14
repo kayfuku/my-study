@@ -1,0 +1,37 @@
+<!--
+  Author    : Fukutani, Kei
+  File Name : AndroidManifest.xml
+  Date      : 9/28/14
+  Objective : This file is the descriptor file of the
+              application.
+ -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cs311d.demofragmentf1" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".DemoFragmentF1"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action 
+				    android:name="android.intent.action.MAIN" />
+                <category 
+				    android:name=
+					       "android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+		<!-- Don't forget to add this Activity -->
+        <activity
+            android:name=".ShowInfoActivity"
+            android:label="@string/app_name" />
+    </application>
+	
+</manifest>

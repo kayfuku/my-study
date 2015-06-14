@@ -1,0 +1,103 @@
+<!--
+  Author    : Fukutani, Kei
+  File Name : activity_demo_service.xml
+  Date      : 10/25/14
+  Objective : This file contains the whole layout of
+              DemoService Activity.
+ -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".DemoService">
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Start Service"
+        android:id="@+id/btn_start"
+        android:layout_below="@+id/et_from"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_from"
+        android:hint="from"
+        android:textSize="15dp"
+        android:layout_marginTop="36dp"
+        android:layout_alignTop="@+id/tv"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_to"
+        android:hint="to"
+        android:textSize="15dp"
+        android:layout_alignBottom="@+id/et_from"
+        android:layout_toRightOf="@+id/et_from"
+        android:layout_toEndOf="@+id/et_from" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_num"
+        android:hint="num"
+        android:textSize="15dp"
+
+        android:layout_alignBottom="@+id/et_to"
+        android:layout_toRightOf="@+id/et_to"
+        android:layout_toEndOf="@+id/et_to" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="400dp"
+        android:text="Prime numbers will be displayed here."
+        android:textSize="20dp"
+        android:id="@+id/tv"
+        android:layout_toEndOf="@+id/et_num"
+        android:layout_toRightOf="@+id/et_num"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Generate \n Prime Num"
+        android:id="@+id/btn_generate"
+        android:layout_below="@+id/btn_start"
+        android:layout_alignLeft="@+id/btn_start"
+        android:layout_alignStart="@+id/btn_start" />
+
+    <EditText
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_code"
+        android:hint="code"
+        android:text=""
+        android:textSize="15dp"
+        android:layout_toEndOf="@+id/et_from"
+        android:layout_toRightOf="@+id/et_from"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Stop Service"
+        android:id="@+id/btn_stop"
+        android:layout_below="@+id/et_code"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

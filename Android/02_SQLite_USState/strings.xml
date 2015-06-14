@@ -1,0 +1,28 @@
+<!-- 
+  Author    : Kei Fukutani
+  File Name : strings.xml
+  Date      : 4/22/14
+  Objective : This file contains the resource of strings. 
+ -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">USStatesGame2</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="text_title">USStates\nGame</string>
+    <string name="btn_play">Play</string>
+    <string name="btn_score">Score</string>
+    <string name="text_hint">Player\'s Name</string>
+    <string name="title_activity_quiz">QuizActivity</string>
+    <string name="text_name">Player\'s Name: </string>
+    <string name="user_name">-------------</string>
+    <string name="text_states">States</string>
+    <string name="text_capitals">Capitals</string>
+    <string name="btn_done">Done</string>
+    <string name="title_activity_quiz_activity2">QuizActivity2</string>
+    <string name="text_points">Points</string>
+    <string name="title_activity_score">ScoreActivity</string>
+
+</resources>

@@ -1,0 +1,29 @@
+<!--
+  Author    : Fukutani, Kei
+  File Name : activity_demo_fragment_f1.xml
+  Date      : 9/28/14
+  Objective : This file contains the whole layout of
+              DemoFragmentF1 Activity for landscape.
+ -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:name="com.cs311d.demofragmentf1.Fragment1"
+        android:id="@+id/frag1"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <fragment
+        android:name="com.cs311d.demofragmentf1.Fragment2"
+        android:id="@+id/frag2"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<!--
+  Author    : Fukutani, Kei
+  File Name : activity_demo_sensor.xml
+  Date      : 11/11/14
+  Objective : This file contains the whole layout of
+              DemoSensor Activity.
+ -->
+
+<?xml version="1.0" encoding="utf-8"?>
+<ListView 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lvSensors"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</ListView>

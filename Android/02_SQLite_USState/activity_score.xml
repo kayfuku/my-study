@@ -1,0 +1,281 @@
+<!-- 
+  Author    : Kei Fukutani
+  File Name : activity_score.xml
+  Date      : 4/22/14
+  Objective : This file contains the whole layout of 
+              ScoreActivity. 
+ -->
+ 
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ScoreActivity" >
+
+    <TextView
+        android:id="@+id/text_n1"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/text_title"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="26dp"
+        android:textSize="14dp"
+        android:text="name" 
+        android:background="#99FF99"
+        />
+
+    <TextView
+        android:id="@+id/text_n2"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_alignLeft="@+id/text_n1"
+        android:layout_below="@+id/text_n1"
+        android:layout_marginTop="15dp"
+        android:text="name"
+        android:textSize="14dp" 
+        />
+
+    <TextView
+        android:id="@+id/text_n3"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_alignLeft="@+id/text_n2"
+        android:layout_below="@+id/text_n2"
+        android:layout_marginTop="15dp"
+        android:text="name"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_n4"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_alignLeft="@+id/text_n3"
+        android:layout_below="@+id/text_n3"
+        android:layout_marginTop="15dp"
+        android:text="name"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_n5"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_alignLeft="@+id/text_n4"
+        android:layout_below="@+id/text_n4"
+        android:layout_marginTop="15dp"
+        android:text="name"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_n6"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_alignLeft="@+id/text_n5"
+        android:layout_below="@+id/text_n5"
+        android:layout_marginTop="15dp"
+        android:text="name"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_n7"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_alignLeft="@+id/text_n6"
+        android:layout_below="@+id/text_n6"
+        android:layout_marginTop="15dp"
+        android:text="name"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_n8"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_alignLeft="@+id/text_n7"
+        android:layout_below="@+id/text_n7"
+        android:layout_marginTop="15dp"
+        android:text="name"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_n9"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_alignLeft="@+id/text_n8"
+        android:layout_below="@+id/text_n8"
+        android:layout_marginTop="15dp"
+        android:text="name"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_n10"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_alignLeft="@+id/text_n9"
+        android:layout_below="@+id/text_n9"
+        android:layout_marginTop="15dp"
+        android:text="name"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_s1"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_alignBaseline="@+id/text_n1"
+        android:layout_alignBottom="@+id/text_n1"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/text_title"
+        android:text="score"
+        android:textSize="14dp" 
+        android:background="#99FF99"
+        />
+
+    <TextView
+        android:id="@+id/text_s2"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_above="@+id/text_n3"
+        android:layout_alignLeft="@+id/text_s1"
+        android:text="score"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_s3"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_above="@+id/text_n4"
+        android:layout_alignLeft="@+id/text_s2"
+        android:text="score"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_s4"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_above="@+id/text_n5"
+        android:layout_alignLeft="@+id/text_s3"
+        android:text="score"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_s5"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_above="@+id/text_n6"
+        android:layout_alignLeft="@+id/text_s3"
+        android:text="score"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_s6"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_above="@+id/text_n7"
+        android:layout_alignLeft="@+id/text_s5"
+        android:text="score"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_s7"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_above="@+id/text_n8"
+        android:layout_alignLeft="@+id/text_s6"
+        android:text="score"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_s8"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_above="@+id/text_n9"
+        android:layout_alignLeft="@+id/text_s7"
+        android:text="score"
+        android:textSize="14dp" 
+        />
+    
+    <TextView
+        android:id="@+id/text_s9"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_above="@+id/text_n10"
+        android:layout_alignLeft="@+id/text_s8"
+        android:text="score"
+        android:textSize="14dp" 
+        />
+
+    <TextView
+        android:id="@+id/text_s10"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_alignBaseline="@+id/text_n10"
+        android:layout_alignBottom="@+id/text_n10"
+        android:layout_alignLeft="@+id/text_s9"
+        android:text="score"
+        android:textSize="14dp" 
+        />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Score" 
+        />
+
+    <TextView
+        android:id="@+id/text_n11"
+        android:layout_width="80dp"
+        android:layout_height="18dp"
+        android:layout_alignLeft="@+id/text_n10"
+        android:layout_below="@+id/text_n10"
+        android:layout_marginTop="15dp"
+        android:text="name"
+        android:textSize="14dp" 
+        />
+
+    <TextView
+        android:id="@+id/text_s11"
+        android:layout_width="40dp"
+        android:layout_height="18dp"
+        android:layout_alignBaseline="@+id/text_n11"
+        android:layout_alignBottom="@+id/text_n11"
+        android:layout_alignLeft="@+id/text_s10"
+        android:text="score"
+        android:textSize="14dp" 
+        />
+
+    <Button
+        android:id="@+id/btn_home"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Back" 
+        android:textSize="9dp" 
+        android:gravity="center"
+        android:onClick="doit"
+        />
+
+</RelativeLayout>
