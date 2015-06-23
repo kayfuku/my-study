@@ -1,0 +1,60 @@
+<!-- Author: Kei Fukutani -->
+<!doctype html>  
+<html lang="en">
+<head> 
+    <title>Reservations</title> 
+    <meta charset="utf-8" />   
+    <meta name="description" content="pacific trail resort activities hiking kayaking bird watching" /> 
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="pacific.css" type="text/css" >
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<div id="wrapper">
+<header>
+    <h1>Pacific Trails Resort</h1>
+</header>
+<div id="main">
+<nav>
+    <ul>
+        <li><a href="index.html" target="_blank">Home</a></li>
+        <li><a href="yurts.html" target="_blank">Yurts</a></li>
+        <li><a href="activities.html" target="_blank">Activities</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+    </ul>
+</nav>
+<section>
+    <h2>Reservations</h2>
+    <p>Required fields are marked with an asterisk <span class="asterisk">&#42;</span>.</p>
+    <form action="#" method="post" id="form1">
+        <fieldset>
+            <legend>Reservation Information</legend>
+            <label for="first_name">First Name<span class="asterisk">&#42;</span>:</label>
+            <input type="text" id="first_name" maxlength="20" size="50" placeholder="" required="required">
+            <br><br>
+            <label for="last_name">Last Name<span class="asterisk">&#42;</span>:</label>
+            <input type="text" id="last_name" maxlength="20" size="50" placeholder="" required="required">
+            <br><br>
+            <label for="email">Email Address:</label> 
+            <input type="email" id="email" maxlength="20" size="50" placeholder="">
+            <br><br>
+            <label for="telnumber">Telephone Number<span class="asterisk">&#42;</span>:</label> 
+            <input type="tel" id="telnumber" maxlength="20" size="50" placeholder="" required="required">
+            <br><br>
+            <label for="comments">Message:</label> 
+            <textarea id="comments" cols="45" rows="10" ></textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+    </form>
+    <br>
+    <footer>
+        <p>Copyright &copy; 2011 Pacific Trails Resort<br>
+            <em>webmaster name</em></p>
+    </footer>
+</section>
+</div> <!-- end of main -->
+</div> <!-- end of wrapper -->
+</body>
+</html>
