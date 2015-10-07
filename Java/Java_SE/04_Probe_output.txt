@@ -1,0 +1,154 @@
+macbookair-k:java_laboratory kei$ Probe
+usage:Probe <option(s)> <class_name>
+Type 'Probe -h' for help.
+macbookair-k:java_laboratory kei$ Probe -h
+usage: Probe <option(s)> <class_name> 
+where option(s) are: 
+-h: display help. 
+-c: display all the constructors. 
+-m: display all the methods. 
+-v: display all the fields. 
+-C: display all the constants. 
+-i: display all the interfaces. 
+-a: display all the above. 
+macbookair-k:java_laboratory kei$ Probe -c DoThat
+---- Constructors ----
+public DoThat()
+public DoThat(int,int,int)
+
+macbookair-k:java_laboratory kei$ Probe -m DoThat
+---- Methods ----
+public void DoThat.run()
+public static void DoThat.add(int,double)
+private int DoThat.doit()
+
+macbookair-k:java_laboratory kei$ Probe -v DoThat
+---- Fields ----
+public double DoThat.avg
+private int DoThat.x
+public static final java.lang.String DoThat.LABEL_AVE
+
+macbookair-k:java_laboratory kei$ Probe -C DoThat
+---- Constants ----
+public static final java.lang.String DoThat.LABEL_AVE
+
+macbookair-k:java_laboratory kei$ Probe -i DoThat
+---- Interfaces ----
+interface java.lang.Runnable
+
+macbookair-k:java_laboratory kei$ Probe -c -m DoThat
+---- Constructors ----
+public DoThat()
+public DoThat(int,int,int)
+
+---- Methods ----
+public void DoThat.run()
+public static void DoThat.add(int,double)
+private int DoThat.doit()
+
+macbookair-k:java_laboratory kei$ Probe -a DoThat
+---- Constructors ----
+public DoThat()
+public DoThat(int,int,int)
+
+---- Methods ----
+public void DoThat.run()
+public static void DoThat.add(int,double)
+private int DoThat.doit()
+
+---- Fields ----
+public double DoThat.avg
+private int DoThat.x
+public static final java.lang.String DoThat.LABEL_AVE
+
+---- Constants ----
+public static final java.lang.String DoThat.LABEL_AVE
+
+---- Interfaces ----
+interface java.lang.Runnable
+
+macbookair-k:java_laboratory kei$ Probe -v -a DoThat
+---- Constructors ----
+public DoThat()
+public DoThat(int,int,int)
+
+---- Methods ----
+public void DoThat.run()
+public static void DoThat.add(int,double)
+private int DoThat.doit()
+
+---- Fields ----
+public double DoThat.avg
+private int DoThat.x
+public static final java.lang.String DoThat.LABEL_AVE
+
+---- Constants ----
+public static final java.lang.String DoThat.LABEL_AVE
+
+---- Interfaces ----
+interface java.lang.Runnable
+
+macbookair-k:java_laboratory kei$ Probe DoThat
+Please input option(s) properly.
+usage: Probe <option(s)> <class_name> 
+where option(s) are: 
+-h: display help. 
+-c: display all the constructors. 
+-m: display all the methods. 
+-v: display all the fields. 
+-C: display all the constants. 
+-i: display all the interfaces. 
+-a: display all the above. 
+macbookair-k:java_laboratory kei$ Probe DoThat -i
+Please input class name properly.
+usage: Probe <option(s)> <class_name> 
+where option(s) are: 
+-h: display help. 
+-c: display all the constructors. 
+-m: display all the methods. 
+-v: display all the fields. 
+-C: display all the constants. 
+-i: display all the interfaces. 
+-a: display all the above. 
+macbookair-k:java_laboratory kei$ Probe -c String
+---- Constructors ----
+public java.lang.String(byte[],int,int)
+public java.lang.String(byte[],java.nio.charset.Charset)
+public java.lang.String(byte[],java.lang.String) throws java.io.UnsupportedEncodingException
+public java.lang.String(byte[],int,int,java.nio.charset.Charset)
+public java.lang.String(byte[],int,int,java.lang.String) throws java.io.UnsupportedEncodingException
+public java.lang.String(java.lang.StringBuilder)
+public java.lang.String(java.lang.StringBuffer)
+public java.lang.String(byte[])
+public java.lang.String(int[],int,int)
+public java.lang.String()
+public java.lang.String(char[])
+public java.lang.String(java.lang.String)
+public java.lang.String(char[],int,int)
+public java.lang.String(byte[],int)
+public java.lang.String(byte[],int,int,int)
+
+macbookair-k:java_laboratory kei$ Probe -v String
+---- Fields ----
+private final char[] java.lang.String.value
+private int java.lang.String.hash
+private static final long java.lang.String.serialVersionUID
+private static final java.io.ObjectStreamField[] java.lang.String.serialPersistentFields
+public static final java.util.Comparator java.lang.String.CASE_INSENSITIVE_ORDER
+
+macbookair-k:java_laboratory kei$ Probe -c Button
+---- Constructors ----
+public java.awt.Button(java.lang.String) throws java.awt.HeadlessException
+public java.awt.Button() throws java.awt.HeadlessException
+
+macbookair-k:java_laboratory kei$ Probe -v Button
+---- Fields ----
+java.lang.String java.awt.Button.label
+java.lang.String java.awt.Button.actionCommand
+transient java.awt.event.ActionListener java.awt.Button.actionListener
+private static final java.lang.String java.awt.Button.base
+private static int java.awt.Button.nameCounter
+private static final long java.awt.Button.serialVersionUID
+private int java.awt.Button.buttonSerializedDataVersion
+
+macbookair-k:java_laboratory kei$ 
