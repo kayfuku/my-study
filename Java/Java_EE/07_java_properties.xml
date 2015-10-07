@@ -1,0 +1,54 @@
+<!--
+  Author    : Fukutani, Kei
+  File Name : java_properties.xml
+  Date      : May 15, 2015
+  Homework Assignment : 6  (CS211E)
+  Objective : This XML file is created by MakeXMLDemo.java.
+ -->
+
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<java>
+    <awt>
+        <graphicsenv>sun.awt.CGraphicsEnvironment</graphicsenv>
+        <printerjob>sun.lwawt.macosx.CPrinterJob</printerjob>
+    </awt>
+    <class>
+        <path>/Users/kei/Documents/Java/workspace_eclipse_java/MyLaboratory/bin:/Users/kei/Dropbox/Java/MyLibrary/CS211S_library/cs211s_lib.jar;*.zip:/Users/kei/Documents/Java/workspace_eclipse_java/mysql-connector-java-5.1.34-bin.jar</path>
+        <version>52.0</version>
+    </class>
+    <endorsed>
+        <dirs>/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre/lib/endorsed</dirs>
+    </endorsed>
+    <ext/>
+    <home>/Library/Java/JavaVirtualMachines/jdk1.8.0_20.jdk/Contents/Home/jre</home>
+    <io>
+        <tmpdir>/var/folders/q1/g1m50l_515dgkfx0_0_0vcb00000gn/T/</tmpdir>
+    </io>
+    <library>
+        <path>/Users/kei/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.</path>
+    </library>
+    <runtime>
+        <name>Java(TM) SE Runtime Environment</name>
+        <version>1.8.0_20-b26</version>
+    </runtime>
+    <specification>
+        <name>Java Platform API Specification</name>
+        <vendor>Oracle Corporation</vendor>
+        <version>1.8</version>
+    </specification>
+    <vendor>Oracle Corporation<url>http://java.oracle.com/<bug>http://bugreport.sun.com/bugreport/</bug>
+        </url>
+    </vendor>
+    <version>1.8.0_20</version>
+    <vm>
+        <info>mixed mode</info>
+        <name>Java HotSpot(TM) 64-Bit Server VM</name>
+        <specification>
+            <name>Java Virtual Machine Specification</name>
+            <vendor>Oracle Corporation</vendor>
+            <version>1.8</version>
+        </specification>
+        <vendor>Oracle Corporation</vendor>
+        <version>25.20-b23</version>
+    </vm>
+</java>
