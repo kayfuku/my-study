@@ -1,0 +1,49 @@
+macbookair-k:java_laboratory kei$ java SystemAccess
+java version "1.8.0_20" 
+Java(TM) SE Runtime Environment (build 1.8.0_20-b26) 
+Java HotSpot(TM) 64-Bit Server VM (build 25.20-b23, mixed mode) 
+exit code: 0 
+/Users/kei/Documents/Java/java_laboratory 
+exit code: 0 
+GetOpt.class 
+Interactive_java_000.java 
+Libij.class 
+List 
+List.class 
+List.java 
+SystemAccess.class 
+SystemAccess.java 
+bu.rb 
+ij 
+ijpackage 
+jar_ex 
+library 
+mkjava 
+mkwrapper 
+my.txt 
+sh.rb 
+exit code: 0 
+total 256 
+-rw-r--r--  1 kei  staff   3169 Aug 21 20:48 GetOpt.class 
+-rw-r--r--  1 kei  staff    571 Aug 30 14:21 Interactive_java_000.java 
+-rw-r--r--  1 kei  staff  16791 Aug 21 20:48 Libij.class 
+-rwxr-xr-x  1 kei  staff    513 Sep  6 16:19 List 
+-rw-r--r--  1 kei  staff   3259 Sep 15 15:42 List.class 
+-rw-r--r--  1 kei  staff   5811 Sep  6 16:21 List.java 
+-rw-r--r--  1 kei  staff   1848 Sep 23 11:53 SystemAccess.class 
+-rw-r--r--  1 kei  staff   1364 Sep 23 11:52 SystemAccess.java 
+-rw-r--r--  1 kei  staff   4438 Aug 21 20:48 bu.rb 
+-rw-r--r--  1 kei  staff  36490 Aug 21 20:48 ij 
+drwxr-xr-x  3 kei  staff    102 Sep  2 13:54 ijpackage 
+drwxr-xr-x  6 kei  staff    204 Sep  6 22:05 jar_ex 
+drwxr-xr-x  4 kei  staff    136 Sep 19 16:04 library 
+-rw-r--r--  1 kei  staff   8567 Aug 21 20:48 mkjava 
+-rwxr-xr-x  1 kei  staff   1462 Aug 21 20:48 mkwrapper 
+-rw-r--r--@ 1 kei  staff     23 Sep  6 16:00 my.txt 
+-rw-r--r--  1 kei  staff   9610 Aug 21 20:48 sh.rb 
+exit code: 0 
+-rw-r--r--  1 kei  staff  1364 Sep 23 11:52 SystemAccess.java 
+exit code: 0 
+ls: \*.java: No such file or directory 
+exit code: 1 
+macbookair-k:java_laboratory kei$ 

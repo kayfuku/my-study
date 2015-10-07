@@ -1,0 +1,69 @@
+Script started on Sat Sep  6 15:42:09 2014
+[?1034hbash-3.2$ javac List.java
+bash-3.2$ List -h
+usage: List option(s) <file> 
+where option(s) are: 
+-h: display help. 
+-n: display line numbers. 
+-t: display lines in the reverse order. 
+-r: display characters in the reverse order. 
+bash-3.2$ List -n my.txt
+1   good
+2   bad
+3   nice
+4   tall
+5   ugly
+bash-3.2$ List -t my.txt
+ugly
+tall
+nice
+bad
+good
+bash-3.2$ List -r my.txt
+doog
+dab
+ecin
+llat
+ylgu
+bash-3.2$ List -n -t my.txt
+1   ugly
+2   tall
+3   nice
+4   bad
+5   good
+bash-3.2$ List -n -r my.txt
+1   doog
+2   dab
+3   ecin
+4   llat
+5   ylgu
+bash-3.2$ List -t -r my.txt
+ylgu
+llat
+ecin
+dab
+doog
+bash-3.2$ List -n -t -r my.txt
+1   ylgu
+2   llat
+3   ecin
+4   dab
+5   doog
+bash-3.2$ List -t -r -n my.txt
+1   ylgu
+2   llat
+3   ecin
+4   dab
+5   doog
+bash-3.2$ List -a
+Invalid option:a
+usage: List option(s) <file> 
+where option(s) are: 
+-h: display help. 
+-n: display line numbers. 
+-t: display lines in the reverse order. 
+-r: display characters in the reverse order. 
+bash-3.2$ exit
+exit
+
+Script done on Sat Sep  6 15:44:22 2014
