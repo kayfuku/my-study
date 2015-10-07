@@ -1,0 +1,20 @@
+Connected to the database.
+Table created.
+Data inserted.
+1. Number of states: 
+50
+2. Capital of Florida: 
+Tallahassee
+3. The states that begin with letter 'M': 
+Montana
+Mississippi
+Maryland
+Maine
+Massachusetts
+Missouri
+Minnesota
+Michigan
+4. The states that consist of 5 characters: 
+Texas
+Idaho
+Maine

@@ -1,0 +1,2 @@
+File name: java_properties.xml
+This XML is valid.

@@ -1,0 +1,20 @@
+Connecting to localhost:10005
+Connection established
+Server says: Enter BYE to exit.
+Client Input> california
+Server says: Sacramento
+Client Input> washington
+Server says: Olympia
+Client Input> hawaii
+Server says: Honolulu
+Client Input> sacramento
+Server says: California
+Client Input> olympia
+Server says: Washington
+Client Input> honolulu
+Server says: Hawaii
+Client Input> japan
+Server says: Type in a state or capital.
+Client Input> bye
+Connection terminated.
+Client done.

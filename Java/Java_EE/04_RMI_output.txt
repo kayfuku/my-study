@@ -1,0 +1,43 @@
+Script started on Sun Mar  8 01:16:30 2015
+[?1034hbash-3.2$ java RmiClient localhost
+Client says: Type in a state> california
+Server says: 
+Sacramento
+Client says: Type in a capital> honolulu
+Server says: 
+Hawaii
+Client says: Type in a regex for states> ^c
+Server says: 
+California
+Connecticut
+Colorado
+Client says: Type in a regex for capitals> ^a
+Server says: 
+Austin
+Atlanta
+Annapolis
+Augustina
+Albany
+Client says: Client done.
+bash-3.2$ java RmiClient localhost
+Client says: Type in a state> zzz
+Server says: 
+Nothing matches.
+Client says: Type in a capital> zzz
+Server says: 
+Nothing matches.
+Client says: Type in a regex for states> /
+Server says: 
+Nothing matches.
+Client says: Type in a regex for capitals> \
+Server says: 
+Invalid regex.
+Client says: Client done.
+bash-3.2$ exit
+exit
+
+Script done on Sun Mar  8 01:17:31 2015
+
+output_client
+
+

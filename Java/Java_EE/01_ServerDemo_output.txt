@@ -1,0 +1,16 @@
+Server started.
+Waiting for msg from client...
+Connection established
+Create thread 1
+Waiting for msg from client...
+run() start
+Client says: california
+Client says: washington
+Client says: hawaii
+Client says: sacramento
+Client says: olympia
+Client says: honolulu
+Client says: japan
+Client says: bye
+normal termination
+Connection terminated.

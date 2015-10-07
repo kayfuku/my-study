@@ -1,0 +1,10 @@
+Connected to the database.
+Table created.
+Data populated.
+Name of the table: states
+The table, 'states' exists.
+Number of the fields: 3
+Name of the fields: id, state, capital
+Type of the fields: INT, VARCHAR, VARCHAR
+Size of the fields: 11, 32, 32
+Number of records: 50
