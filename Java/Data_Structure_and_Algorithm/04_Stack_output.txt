@@ -1,0 +1,48 @@
+bash-3.2$ javac Lab4.java
+bash-3.2$ java Lab4
+Input infix expression: (4-2)*3
+Infix: (4-2)*3
+Postfix: 4 2 - 3 * 
+Result: 6
+Continue? (Enter Y or N): Y
+
+Input infix expression: 7-3+5
+Infix: 7-3+5
+Postfix: 7 3 - 5 + 
+Result: 9
+Continue? (Enter Y or N): Y
+
+Input infix expression: 6/(2*3)
+Infix: 6/(2*3)
+Postfix: 6 2 3 * / 
+Result: 1
+Continue? (Enter Y or N): Y
+
+Input infix expression: (2+3)*4
+Infix: (2+3)*4
+Postfix: 2 3 + 4 * 
+Result: 20
+Continue? (Enter Y or N): Y
+
+Input infix expression: 2-(3+4)
+Infix: 2-(3+4)
+Postfix: 2 3 4 + - 
+Result: -5
+Continue? (Enter Y or N): Y
+
+Input infix expression: 2-(6/3*4)
+Infix: 2-(6/3*4)
+Postfix: 2 6 3 / 4 * - 
+Result: -6
+Continue? (Enter Y or N): Y
+
+Input infix expression: 8/4/2-(3+5)*6
+Infix: 8/4/2-(3+5)*6
+Postfix: 8 4 / 2 / 3 5 + 6 * - 
+Result: -47
+Continue? (Enter Y or N): N
+
+bash-3.2$ exit
+exit
+
+Script done on Mon Apr 20 13:00:49 2015
