@@ -1,5 +1,14 @@
 # Guess the word that user thinks of. 
 # Kei Fukutani, April 17, 2016.
+# 
+# 例えば、i-t----- と入力すると、
+#
+# 1: interest  (54.6 %)
+# 2: interior  (12.3 %)
+# 3: internal  (10.3 %)
+#
+# と表示されます。
+#
 
 
 # Apply integer divide in Python 3 to Python 2.
