@@ -1,4 +1,4 @@
-// Binary Search Tree with some tweak.
+// Binary Search Tree with left subtree size at each node.
 // In general, counting the number of nodes that are less than 
 // or equal to x takes O(N) traversing in in-order until x. 
 // But this BST takes O(log N) to get the number.

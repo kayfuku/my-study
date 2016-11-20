@@ -13,12 +13,12 @@ public class SLL_DLL {
 		// Create singly linked list.
 //		SLLNode<Integer> singlyLL = new SLLNode<Integer>(2);
 		
-//		// Test insertTail().
-//		singlyLL.insertTail(1);
-//		singlyLL.insertTail(3);
-//		singlyLL.insertTail(2);
-//		singlyLL.insertTail(4);
-//		//singlyLL.displayList(); // 2 1 3 2 4
+		// Test insertTail().
+		// singlyLL.insertTail(1);
+		// singlyLL.insertTail(3);
+		// singlyLL.insertTail(2);
+		// singlyLL.insertTail(4);
+		//singlyLL.displayList(); // 2 1 3 2 4
 		
 		// Test insertTail2().
 		SLLNode<Integer> singlyLL = null;

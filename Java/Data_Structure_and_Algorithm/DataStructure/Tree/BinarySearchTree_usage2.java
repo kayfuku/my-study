@@ -313,6 +313,8 @@ class SimpleBinarySearchTree2 {
 	        SimpleTreeNode node = queue.poll();
 			System.out.println(node.data);
 
+			// This if statement is not required
+			// if just traversal is needed. 
 	        if (node.data == key) {
 	            // Found.
 				System.out.println("Found.");
@@ -325,6 +327,7 @@ class SimpleBinarySearchTree2 {
 	    } // end while (...)
 
 	    // Not found.
+	    // If just traversal is needed, these two lines are not requisite. 
 		System.out.println("Not found.");
 		return;
 	}

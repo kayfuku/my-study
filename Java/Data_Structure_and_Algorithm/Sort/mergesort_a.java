@@ -77,6 +77,7 @@ public class ForCopy {
         // Put all of the rest into the temp array.
         // At this point, either of two array should be finished already
         // due to the while loop condition. 
+        // Sentinels can make it simpler. (Aizu Book p.154)
         while (iLeft < mid) {
             temp[iTemp] = arr[iLeft];
             iTemp++;

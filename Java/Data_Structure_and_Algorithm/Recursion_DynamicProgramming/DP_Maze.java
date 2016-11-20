@@ -62,8 +62,8 @@ public class DP_Maze {
 		// Test countPaths(), or countPaths_DP().
 		//int count = countPaths(maze4);
 		int count = countPaths_DP(maze4);
-		System.out.println(count);
-		System.out.println(numCalls + " calls.");
+		System.out.println(count); // 19
+		System.out.println(numCalls + " calls."); // 29 calls. 
 		numCalls = 0;
 		
 

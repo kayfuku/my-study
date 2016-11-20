@@ -4,7 +4,6 @@
 
 package whiteboard;
 
-import java.awt.image.RescaleOp;
 
 public class Lab_whiteboard {
 
