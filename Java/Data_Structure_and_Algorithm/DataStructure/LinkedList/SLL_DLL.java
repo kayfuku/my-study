@@ -1,6 +1,5 @@
 // Singly and Doubly Linked List.
 // Author: kei
-// Date  : October 19, 2016
 
 package whiteboard;
 
@@ -13,12 +12,12 @@ public class SLL_DLL {
 		// Create singly linked list.
 //		SLLNode<Integer> singlyLL = new SLLNode<Integer>(2);
 		
-		// Test insertTail().
-		// singlyLL.insertTail(1);
-		// singlyLL.insertTail(3);
-		// singlyLL.insertTail(2);
-		// singlyLL.insertTail(4);
-		//singlyLL.displayList(); // 2 1 3 2 4
+//		// Test insertTail().
+//		singlyLL.insertTail(1);
+//		singlyLL.insertTail(3);
+//		singlyLL.insertTail(2);
+//		singlyLL.insertTail(4);
+//		//singlyLL.displayList(); // 2 1 3 2 4
 		
 		// Test insertTail2().
 		SLLNode<Integer> singlyLL = null;
@@ -218,12 +217,118 @@ public class SLL_DLL {
 
 }
 
+// Simple list node. 
+// Author: kei
+// Date  : November 29, 2016
+class SimpleListNode {
+	int data;
+	SimpleListNode next;
+	
+	public SimpleListNode() {
+	}
+	
+	public SimpleListNode(int data) {
+		this.data = data;
+	}
+	
+	public SimpleListNode(int data, SimpleListNode node) {
+		this.data = data;
+		this.next = node;
+	}
 
-// Singly Linked List. Not necessary?
+}
+
+
+// Singly Linked List. 
 // Author: アルゴリズムを学ぼう p.53 + kei.
 // Date  : September 19, 2016
 class SinglyLinkedList<T> {
 	SLLNode<T> head;
+	
+	public SinglyLinkedList() {
+		head = null;
+	}
+	
+	// Add at head. O(1)
+	// Author: kei
+	// Date  : November 29, 2016
+	public void add(T data) {
+		SLLNode<T> newNode = new SLLNode<T>(data);
+		if (head == null) {
+			head = newNode;
+		} else {
+			// There exists one or more node. 
+			newNode.next = head;
+			head = newNode;
+		}
+	}
+	
+	
+	// Check if the list is sorted in ascending order. 
+	// Author: CS111C Lab3 + kei
+	// Date  : November 29, 2016
+	public boolean isSorted() {
+		if (head == null || head.next == null) {
+			return true;
+		} else {
+			SLLNode<T> prev = head;
+			SLLNode<T> curr = head.next;
+			
+            // Check if the list is sorted in ascending order.
+            // This time, descending order means not sorted.
+			while (curr != null) {
+				if ((Integer) prev.data > (Integer) curr.data) {
+					return false;
+				}
+				prev = prev.next;
+				curr = curr.next;				
+			}
+
+			return true;						
+		}
+	}
+	
+	// Reverse the list. O(N) space. 
+	// Author: CS111C Lab3 + kei
+	// Date  : November 29, 2016
+	public void reverse() {
+		SLLNode<T> node = head;
+		SLLNode<T> newHead = null;
+		
+		while (node != null) {
+			SLLNode<T> newNode = new SLLNode<T>(node.data);
+			newNode.next = newHead;
+			newHead = newNode;
+			node = node.next;			
+		}
+		
+		head = newHead;				
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	// Display the whole list. 
+	// Author: kei
+	// Date  : November 29, 2016
+	@Override
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		SLLNode<T> node = head;
+		sb.append("[ ");
+		while (node != null) {
+			sb.append(node.data);
+			sb.append(" ");
+			node = node.next;
+		}
+		sb.append("]");
+		return sb.toString();
+	}
 }
 
 // Node to be used in Singly Linked List.
@@ -338,9 +443,9 @@ class SLLNode<T> {
 	public void insertAfter(SLLNode<T> node, SLLNode<T> newNode) {
 		newNode.next = node.next;
 		node.next = newNode;	
-	}			
+	}
 
-
+	
 	
 }
 

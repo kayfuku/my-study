@@ -1,4 +1,4 @@
-// Binary Search. (It needs to be sorted in advance.)
+// Binary Search. (The array needs to be sorted in advance.)
 // Recursive version. This is less efficient than iterative one. 
 // Average Case : O(log N)
 // Space Complexity : O(log N)

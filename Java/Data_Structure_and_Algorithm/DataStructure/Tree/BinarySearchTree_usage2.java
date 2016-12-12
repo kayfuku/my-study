@@ -52,6 +52,11 @@ public class BinarySearchTree_usage2 {
 //		bst.levelOrder(bstNode, 1); // 6 3 12 1 Found. 
 //		bst.levelOrder(bstNode, 0); // 6 3 12 1 4 9 14 Not found.
 
+		// Test levelOrder2()
+		bst.levelOrder2(bstNode, 14); // 6 3 12 1 4 9 14 Found. 
+		bst.levelOrder2(bstNode, 1); // 6 3 12 1 Found. 
+		bst.levelOrder2(bstNode, 0); // 6 3 12 1 4 9 14 Not found.
+		
 		// Test preorderIter() 
 //		bst.preorderIter(bstNode); // 6 3 1 4 12 9 14 
 		
@@ -59,14 +64,14 @@ public class BinarySearchTree_usage2 {
 		//bst.inorder2(bstNode); // 1 3 4 6 9 12 14
 
 		// Test countNodes(), countN().
-		int c = bst.countNodes(bstNode);
-		System.out.println(c); // 7
-		c = bst.countNodes(bstNodeW);
-		System.out.println(c); // 3
-		c = bst.countN(bstNode);
-		System.out.println(c); // 7
-		c = bst.countN(bstNodeW);
-		System.out.println(c); // 3
+//		int c = bst.countNodes(bstNode);
+//		System.out.println(c); // 7
+//		c = bst.countNodes(bstNodeW);
+//		System.out.println(c); // 3
+//		c = bst.countN(bstNode);
+//		System.out.println(c); // 7
+//		c = bst.countN(bstNodeW);
+//		System.out.println(c); // 3
 
 		
 		
@@ -331,7 +336,43 @@ class SimpleBinarySearchTree2 {
 		System.out.println("Not found.");
 		return;
 	}
-
+	
+	// Level-order traversal with level focused. (BFS) O(N)
+	// Author: CtCI 4.3 p.243 + kei
+	// Date  : December 8, 2016
+	public void levelOrder2(SimpleTreeNode tNode, int key) {
+		LinkedList<SimpleTreeNode> levelList = new LinkedList<>();
+		if (tNode != null) {
+			levelList.add(tNode);
+		}
+		
+		while (!levelList.isEmpty()) {
+			LinkedList<SimpleTreeNode> parents = levelList;
+			
+			levelList = new LinkedList<>();
+			for (SimpleTreeNode parent : parents) {
+				System.out.println(parent.data);
+				
+				// This if statement is not required
+				// if just traversal is needed. 
+		        if (parent.data == key) {
+		            // Found.
+					System.out.println("Found.");
+					return;
+		        }
+				
+				if (parent.left != null) {
+					levelList.add(parent.left);
+				}
+				if (parent.right != null) {
+					levelList.add(parent.right);
+				}				
+			}	
+		}
+		
+		System.out.println("Not found.");
+	}
+	
 	// Retrieve. O(log N)
 	// Assume that left < mid <= right.
 	// Author: JAVA p.617 + kei

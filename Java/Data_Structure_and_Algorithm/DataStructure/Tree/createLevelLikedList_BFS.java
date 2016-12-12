@@ -1,7 +1,7 @@
 // Create a linked list at each level of a Binary Search Tree
 // using modified BFS.
-// Author: Cracking Coding Interview p.220 + kei.
-// Date  : February 10, 2016
+// Author: CtCI 4.3 p.243 + kei.
+// Date  : February 10, December 8, 2016
 
 
 ArrayList<LinkedList<TreeNode>> createLevelLinkedList(TreeNode root) {
@@ -13,7 +13,7 @@ ArrayList<LinkedList<TreeNode>> createLevelLinkedList(TreeNode root) {
         currentListEachLevel.add(root);
     }
 
-    while (currentListEachLevel.size() > 0) {
+    while (!currentListEachLevel.isEmpty()) {
         lists.add(currentListEachLevel);
 
         LinkedList<TreeNode> parentsList = currentListEachLevel;
@@ -32,6 +32,35 @@ ArrayList<LinkedList<TreeNode>> createLevelLinkedList(TreeNode root) {
 
     return lists;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

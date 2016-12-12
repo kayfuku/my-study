@@ -5,7 +5,7 @@
 // remove(Object o), contains(Object o): retrieve o　O(N)
 
 // Author: Data Abstraction & Problem Solving with JAVA p.691 + kei
-// Date  : October 3, 2016
+// Date  : October 3, November 28, 2016
 
 import java.util.Collections;
 import java.util.PriorityQueue;
@@ -14,6 +14,7 @@ public class Heap {
 
     public static void main(String[] args) {        
         
+        // Min-Heap. 
         PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>(2);
         minHeap.add(2);
         minHeap.add(6);
@@ -22,6 +23,8 @@ public class Heap {
         System.out.println(minHeap); // [2, 6, 15, 8]
         int n = minHeap.peek();
         System.out.println(n); // 2 
+
+        // Max-Heap.
         PriorityQueue<Integer> maxHeap = 
                 new PriorityQueue<Integer>(Collections.reverseOrder());
         maxHeap.add(2);
@@ -30,7 +33,7 @@ public class Heap {
         maxHeap.add(8);
         System.out.println(maxHeap); // [15, 8, 6, 2]
         n = maxHeap.peek();
-        System.out.println(n); // 2 
+        System.out.println(n); // 15
         
         PriorityQueue<Integer> maxHeap3 = 
                 new PriorityQueue<Integer>(2, Collections.reverseOrder());

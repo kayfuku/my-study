@@ -40,7 +40,7 @@ public class Lab01 {
     
 
 //  // Pending... Look at 続ア学p.121 Boyer-Moore string search algorithm. 
-//  // In the case that you are not allowed to use the library. 
+//  // In the case that you are not allowed to use the library. O(n + m)
 //  // Author: kei
 //  // Date  : October 18, 2016
 //  public static boolean isSubstring(String s1, String s2) {

@@ -48,6 +48,9 @@ public class Lab_whiteboard {
         return sb.toString();
     }
 
+    // It only works if the string consists of an optional negative 
+    // sign followed by digits. 
+    // The number is too big, the result will be incorrect due to overflow. 
     public static int stringToInt(String s) {
         boolean isNegative = s.charAt(0) == '-';
         int result = 0;

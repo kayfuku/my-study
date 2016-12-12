@@ -1,11 +1,11 @@
-// Bucket Sort.
+// Bucket Sort. 
 // Average case: O(N + k)
 // Worst case  : O(N^2)
 // Best case   : O(N)
-// Space Complexity : O(k * n) 
+// Space Complexity : O(n + k) 
 // Author: Wikipedia(http://www.growingwiththeweb.com/2015/06/bucket-sort.html)
 //         + kei
-// Date  : September 28, 2016
+// Date  : September 28, November 27, 2016
 
 
 private static final int DEFAULT_BUCKET_SIZE = 5;
@@ -49,13 +49,38 @@ public static void bucketSort(Integer[] array, int bucketSize) {
     // Sort buckets and place back into input array
     int currentIndex = 0;
     for (int i = 0; i < buckets.size(); i++) {
+        // Get the ArrayList and convert it to Array.
         Integer[] bucketArray = new Integer[buckets.get(i).size()];
         bucketArray = buckets.get(i).toArray(bucketArray);
-        InsertionSort.sort(bucketArray);
+        // Insertion Sort. 
+        insertionSort(bucketArray);
+        // Get the sorted result. 
         for (int j = 0; j < bucketArray.length; j++) {
             array[currentIndex++] = bucketArray[j];
         }
     }
+
+
+    // Insertion Sort.
+    public static void insertionSort(Integer[] arr) {
+        if (arr == null) {
+            return;
+        }
+
+        int N = arr.length;
+        for (int i = 1; i < N; ++i) {
+            int j = i;
+            while (j > 0 && arr[j - 1] > arr[j]) {
+                // Swap.
+                int t = arr[j];
+                arr[j] = arr[j - 1];
+                arr[j - 1] = t;
+                --j;
+            }
+        }
+    }
+    
+
 }
 
 

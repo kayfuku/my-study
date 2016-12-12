@@ -23,10 +23,10 @@ public class DFS_BFS_2 {
 		
 		// DFS.
 		//boolean result = dfs(graph, new Vertex2("a"), new Vertex2("f"), new HashSet<Vertex2>());
-		boolean result = dfsIter(graph, new Vertex2("a"), new Vertex2("d"));
+		//boolean result = dfsIter(graph, new Vertex2("a"), new Vertex2("d"));
 		
 		// BFS.
-		//boolean result = bfs(graph, new Vertex2("a"), new Vertex2("f"));
+		boolean result = bfs(graph, new Vertex2("a"), new Vertex2("f"));
 		
 		
 		System.out.println(result);
@@ -36,10 +36,10 @@ public class DFS_BFS_2 {
 	// Build a graph.
 	//		    b  −−→  d
 	//		  ↗︎↑↘   ↙︎  ↘︎
-	//		a   ｜  ×    　 f
-	//		  ↘︎｜↙︎   ↘︎  ⇄︎
+	//		a 　｜ 　×    　 f
+	//		  ↘︎｜↙︎   ↘︎  /︎
 	//		    c  −−→  e
-	private static GraphAdjList createGraph() {
+	public static GraphAdjList createGraph() {
 		GraphAdjList g = new GraphAdjList();
 		
 		Vertex2 aVertex = new Vertex2("a");
@@ -76,13 +76,13 @@ public class DFS_BFS_2 {
 
 		
 		// Display edges.
-		for (Map.Entry<Vertex2, ArrayList<Vertex2>> entry : g.adjLists.entrySet()) {
-			System.out.println(entry.getKey());
-			for (Vertex2 v : entry.getValue()) {
-				System.out.println(entry.getKey() + "-" + v + " ");
-			}
-		}
-		System.out.println();
+//		for (Map.Entry<Vertex2, ArrayList<Vertex2>> entry : g.adjLists.entrySet()) {
+//			System.out.println(entry.getKey());
+//			for (Vertex2 v : entry.getValue()) {
+//				System.out.println(entry.getKey() + "-" + v + " ");
+//			}
+//		}
+//		System.out.println();
 		
 		return g;
 	}
@@ -92,6 +92,8 @@ public class DFS_BFS_2 {
 	 * Depth First Search. Search for goal node traversing from node v.
 	 * @param visited A set of vertices that have been visited before.
 	 */
+	// Author: kei
+	// Date  : October 25, 31, 2016
 	public static boolean dfs(GraphAdjList g, Vertex2 v, Vertex2 goal, Set<Vertex2> visited) {
 		// This is not good place to put print method 
 		// because the node visited is not avoided yet. 
@@ -130,6 +132,8 @@ public class DFS_BFS_2 {
 	/**
 	 * Depth First Search iterative version. Search for goal node traversing from node v.
 	 */
+	// Author: kei
+	// Date  : October 25, 31, 2016
 	public static boolean dfsIter(GraphAdjList g, Vertex2 start, Vertex2 goal) {
 	    Set<Vertex2> visited = new HashSet<Vertex2>();
 	    LinkedList<Vertex2> stack = new LinkedList<Vertex2>();
@@ -167,6 +171,8 @@ public class DFS_BFS_2 {
 	/**
 	 * Breadth First Search. Search for goal node traversing from node v.
 	 */
+	// Author: kei
+	// Date  : October 25, 31, 2016
 	public static boolean bfs(GraphAdjList g, Vertex2 start, Vertex2 goal) {
 	    Set<Vertex2> visited = new HashSet<Vertex2>();
 	    LinkedList<Vertex2> queue = new LinkedList<Vertex2>();
@@ -205,7 +211,8 @@ public class DFS_BFS_2 {
 
 }
 
-
+//Author: kei
+//Date  : October 25, 31, 2016
 class GraphAdjList {
 	//  adjLists
 	//     v1 -> v3
@@ -222,6 +229,8 @@ class GraphAdjList {
     }
 }
 
+//Author: kei
+//Date  : October 25, 31, 2016
 class Vertex2 {
     String name;
 

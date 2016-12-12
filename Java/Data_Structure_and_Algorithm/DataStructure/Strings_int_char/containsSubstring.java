@@ -10,6 +10,8 @@ boolean containsSubstring(String s1, String s2) {
 
 
 
+// Note that Boyer-Moore Search Algorithm takes O(n + m) time. 
+
 
 
 

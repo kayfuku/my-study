@@ -29,10 +29,6 @@ if (flags[c]) {
 }
 
 
-
-
-
-
 // Author: kei
 // Date  : October 13, 2016
 package pack01;
@@ -192,6 +188,39 @@ arrayList4.add(4);
 System.out.println(arrayList4.toString()); // [1, 2, 4]
 System.out.println(set.contains(arrayList3)); // true
 System.out.println(set.contains(arrayList4)); // true
+
+
+
+// How to create an Object array. 
+// Author: kei 
+// Date  : November 27, 2016
+Person p1 = new Person("John1", 16);
+Person p2 = new Person("John3", 16);
+Person p3 = new Person("John4", 20);
+Person p4 = new Person("John2", 23);
+
+Person[] persons = new Person[]{p1, p2, p3, p4};
+
+
+// If the ArrayList length is 0, get(i) causes 
+// IndexOutOfBoundsException instead of returning null. 
+// Author: kei 
+// Date  : November 28, 2016
+ArrayList<Integer> aList = new ArrayList<>();
+int n = (int) aList.get(0); // IndexOutOfBoundsException. 
+System.out.println(n); 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

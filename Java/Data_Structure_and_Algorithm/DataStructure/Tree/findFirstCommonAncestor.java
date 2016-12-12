@@ -1,5 +1,4 @@
 // Find the first common ancestor in Binary Tree.
-// Assume that each node has a link to its parent.
 // Author: CtCI 6th 4.8 p.258 + kei
 // Date  : October 23, 2016
 
@@ -107,6 +106,10 @@ public class Lab_whiteboard {
     }
 
 
+    // Find the first common ancestor in Binary Tree.
+    // Assume that each node has a link to its parent.
+    // Author: CtCI 6th 4.8 p.258 + kei
+    // Date  : October 23, 2016
     public static SimpleTreeNodeP findFirstCommonAncestorP(
             SimpleTreeNodeP root, SimpleTreeNodeP p, SimpleTreeNodeP q) {
         // Check if either node is not in the tree, or if one covers the other. 
@@ -213,6 +216,48 @@ public class Lab_whiteboard {
     
         return null;
     }
+
+
+
+    // Find the first common ancestor in Binary Tree.
+    // Assume that each node has a link to its parent.
+    // O(d0 + d1) time and space, where d0 is the distance from 
+    // the LCA to the first node, and d1 is the other. 
+    // Author: EPI 13.4 p.198 + kei
+    // Date  : December 1, 2016
+    public static TreeNode<Integer> findLowestCommonAncestor(
+        TreeNode<Integer> node0, TreeNode<Integer> node1) {
+        Set<TreeNode<Integer>> hash = new HashSet<>();
+
+        while (node0 != null || node1 != null) {
+            // Ascend tree in tandem from these two nodes. 
+            if (node0 != null) {
+                // You can conbine contains() and add() like this. 
+                if (!hash.add(node0)) {
+                    return node0;
+                }
+                node0 = node0.parent;
+            }
+            if (node1 != null) {
+                if (!hash.add(node1)) {
+                    return node1;
+                }
+                node1 = node1.parent;
+            }
+        } 
+
+        throw new IllegalArgumentException(
+            "node0 and node1 are not in the same tree");
+    }
+
+
+
+
+
+
+
+
+
 
 
 

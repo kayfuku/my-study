@@ -1,4 +1,5 @@
-// Get the height of a binary tree.
+// Get the height of a binary tree. 
+// O(N) time.
 // Author: Cracking Coding Interview p.216 + kei
 // Date  : February 8, 2016
 
@@ -14,6 +15,7 @@ public static int getHeight(TreeNode root) {
 
 // Get the height of binary tree. 
 // Post-order because it needs the info of both left and right child.
+// O(N) time. 
 // Author: kei
 // Date  : September 25, 2016
 
